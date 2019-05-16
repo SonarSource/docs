@@ -16,8 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.0.1` (*7/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/995cfd3dfd4dacad09ad343bbb40fbdb6f1a846d/7/Dockerfile)
--	[`6.7.2` (*6/Dockerfile*)](https://github.com/docker-library/elasticsearch/blob/10047d93c8692803a369a5306c9663dbefab9701/6/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `elasticsearch` does not support the currently selected architecture (`ppc64le`).
 
 # Quick reference
 
