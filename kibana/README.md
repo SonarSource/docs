@@ -19,6 +19,8 @@ WARNING:
 -	[`7.0.1` (*7/Dockerfile*)](https://github.com/docker-library/kibana/blob/c9410307facd43e43278d103b32ff1c88df46c28/7/Dockerfile)
 -	[`6.7.2` (*6/Dockerfile*)](https://github.com/docker-library/kibana/blob/44ae7362882b993059936a78518bb7952b11f140/6/Dockerfile)
 
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/kibana/badge/icon) (`amd64/kibana` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/kibana/)
+
 # Quick reference
 
 -	**Where to get help**:  
