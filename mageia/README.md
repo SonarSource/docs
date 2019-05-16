@@ -16,7 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6`, `latest` (*6/x86_64/Dockerfile*)](https://github.com/juanluisbaptiste/docker-brew-mageia/blob/e7ffd1ff77c5914b7f46a6cee2373acfb0bf60f5/6/x86_64/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `mageia` does not support the currently selected architecture (`windows-amd64`).
 
 # Quick reference
 
@@ -67,7 +69,7 @@ To date, Mageia:
 ## Create a Dockerfile for your container
 
 ```dockerfile
-FROM mageia:6
+FROM winamd64/mageia:6
 MAINTAINER  "Foo Bar" <foo@bar.com>
 CMD [ "bash" ]
 ```
