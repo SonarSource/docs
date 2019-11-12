@@ -71,7 +71,7 @@ The images contain the SonarQube installation at `/opt/sonarqube`. You need to b
 
 Follow these steps for your first installation:
 
-1.	Create volumes `sonarqube_conf`, `sonarqube_data`, `sonarqube_logs` and `sonarqube_extensions` and start the image with the following command. This will populate all the volumes (copying default plugins, create the elasticsearch data folder, create the sonar.properties configuration file). Watch the logs, and once the container is properly started you can force-exit (ctrl+c) and proceed to the next step.
+1.	Create volumes `sonarqube_conf`, `sonarqube_data`, `sonarqube_logs`, and `sonarqube_extensions` and start the image with the following command. This will populate all the volumes (copying default plugins, create the Elasticsearch data folder, create the sonar.properties configuration file). Watch the logs, and, once the container is properly started, you can force-exit (ctrl+c) and proceed to the next step.
 
 	```console
 	$ docker run --rm \
@@ -92,7 +92,7 @@ Follow these steps for your first installation:
 
 3.	Drivers for the supported databases (except Oracle) are already provided. Do not replace the provided drivers; they are the only ones supported. For Oracle, copy the JDBC driver into `$SONARQUBE_HOME/extensions/jdbc-driver/oracle`.
 
-4.	Run the image with your jdbc username and password :
+4.	Run the image with your JDBC username and password :
 
 	```console
 	$ docker run -d --name sonarqube \
@@ -152,11 +152,11 @@ Follow these steps for your first installation:
 
 ## Upgrade SonarQube 7.9.X LTS to another 7.9.X LTS version
 
-Take a look at the [Upgrade Guide](https://docs.sonarqube.org/latest/setup/upgrading/). No specific docker operation are needed, just use the new tag.
+Take a look at the [Upgrade Guide](https://docs.sonarqube.org/latest/setup/upgrading/). No specific Docker operations are needed, just use the new tag.
 
 ## Upgrade from SonarQube 7.9.X LTS to SonarQube 8.X and later
 
-Take a look at the [Upgrade Guide](https://docs.sonarqube.org/latest/setup/upgrading/). On top of that, you need to switch from volumes to host-binded folder for easier next upgrade procedure. Follow the next chapiter `Upgrade from SonarQube 8.X and later` instructions, but instead of upgrading from a backup-folder to a new folder, you will upgrade from your backup-volume to a new folder. Starting with the 8.0 version, You can move your `sonar.jdbc.username` and `sonar.jdbc.password` value to `sonar.properties` instead of passing them with the `-e` flag.
+Take a look at the [Upgrade Guide](https://docs.sonarqube.org/latest/setup/upgrading/). In addition, you need to switch from volumes to host-binded folder to make the next upgrade step easier. Follow the instructions in the next section `Upgrade from SonarQube 8.X and later` , but instead of upgrading from a backup-folder to a new folder, you will upgrade from your backup-volume to a new folder. Starting with the version 8.0, you can move your `sonar.jdbc.username` and `sonar.jdbc.password` value to `sonar.properties` instead of passing them with the `-e` flag.
 
 ## Upgrade from SonarQube 8.X and later
 
