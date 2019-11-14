@@ -103,7 +103,6 @@ Follow these steps for your first installation:
 	    %%IMAGE%%
 	```
 
-
 ### SonarQube 8.x first installation
 
 Follow these steps for your first installation:
@@ -156,7 +155,7 @@ No specific Docker operations are needed, just use the new tag.
 
 ### From 7.9.x LTS to 8.x
 
-Follow the next section instructions, but instead of upgrading from folders to folders, you will migrate your volumes to new folders.  
+Follow the next section instructions, but instead of upgrading from folders to folders, you will migrate your volumes to new folders.
 
 > Starting with the version 8.0, you can move your `sonar.jdbc.username` and `sonar.jdbc.password` value to `sonar.properties` instead of passing them with the `-e` flag.
 
