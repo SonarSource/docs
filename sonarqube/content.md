@@ -57,7 +57,6 @@ Setup a database by following the "Installing the Database" section of https://d
 
 ### Use bind-mounted folders or volumes
 
--	SonarQube 7.9.X LTS : Use volumes
 
 The images contain the SonarQube installation at `/opt/sonarqube`. You need to bind them to your host to override selected files or directories :
 
