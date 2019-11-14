@@ -156,7 +156,6 @@ No specific Docker operations are needed, just use the new tag.
 
 ### From 7.9.x LTS to 8.x
 
-Take a look at the [Upgrade Guide](https://docs.sonarqube.org/latest/setup/upgrading/).  
 Follow the next section instructions, but instead of upgrading from folders to folders, you will migrate your volumes to new folders.  
 
 > Starting with the version 8.0, you can move your `sonar.jdbc.username` and `sonar.jdbc.password` value to `sonar.properties` instead of passing them with the `-e` flag.
@@ -167,7 +166,7 @@ Follow these steps to upgrade SonarQube:
 
 1.	Create a new `sonarqube_home_new` folder and backup your old folder.
 
-2.	Update the environment variable `$SONARQUBE_HOME` pointing to it. Backup the old one:
+2.	Update the environment variable `$SONARQUBE_HOME` pointing to it:
 
 	```console
 	$ mkdir /path/to/your/filesystem/sonarqube_home_new
